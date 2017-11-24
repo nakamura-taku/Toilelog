@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20171124071334) do
 
-  create_table "messages", force: :cascade do |t|
-    t.string "title"
-    t.string "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "toilelogs", force: :cascade do |t|
     t.string "title"
     t.string "kuchikomi"
