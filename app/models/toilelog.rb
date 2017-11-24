@@ -1,0 +1,2 @@
+class Toilelog < ApplicationRecord
+end

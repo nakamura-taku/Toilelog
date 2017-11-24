@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Toilelogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Kuchikomi</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @toilelogs.each do |toilelog| %>
+      <tr>
+        <td><%= toilelog.title %></td>
+        <td><%= toilelog.kuchikomi %></td>
+        <td><%= link_to 'Show', toilelog %></td>
+        <td><%= link_to 'Edit', edit_toilelog_path(toilelog) %></td>
+        <td><%= link_to 'Destroy', toilelog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Toilelog', new_toilelog_path %>

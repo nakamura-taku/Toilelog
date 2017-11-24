@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @toilelog.title %>
+</p>
+
+<p>
+  <strong>Kuchikomi:</strong>
+  <%= @toilelog.kuchikomi %>
+</p>
+
+<%= link_to 'Edit', edit_toilelog_path(@toilelog) %> |
+<%= link_to 'Back', toilelogs_path %>
